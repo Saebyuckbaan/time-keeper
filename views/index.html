@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Keeper</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/global/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/local/form.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 form">
+        <div class="form-contents">
+          <!--Form Starts-->
+          <form action="/form" method="get">
+            
+            <label for="basic-url">Clock-in</label>
+            <div class="input-group form-text-field">
+              <input type="text" class="form-control" id="clock-in" name="clock-in" aria-describedby="basic-addon3">
+            </div>
+
+            <label for="basic-url">Lunch-Start</label>
+            <div class="input-group form-text-field">
+              <input type="text" class="form-control" id="lunch-start" name="lunch-start" aria-describedby="basic-addon3">
+            </div>
+
+            <label for="basic-url">Lunch-End</label>
+            <div class="input-group form-text-field">
+              <input type="text" class="form-control" id="lunch-end" name="lunch-end" aria-describedby="basic-addon3">
+            </div>
+
+            <label for="basic-url">Clock-Out</label>
+            <div class="input-group form-text-field">
+              <input type="text" class="form-control" id="clock-out" name="clock-out" aria-describedby="basic-addon3">
+            </div>
+
+
+            <div class="btn-group form-submit-button" role="group" aria-label="...">
+              <input class="btn btn-default" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./javascripts/global/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="./javascripts/global/bootstrap.min.js"></script>
+</body>
+</html>
