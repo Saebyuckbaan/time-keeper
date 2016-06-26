@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  width: 100%;
+  height: 55px;
+  z-index: 100;
+}
+
+header #logo {
+  display: block;
+  font: 25px "Helvetica Neue","Open Sans",sans-serif;
+  font-weight: 100;
+  color: #444;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+body {
+
+}

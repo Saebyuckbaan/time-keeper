@@ -1,11 +1,5 @@
 $(document).ready( function( event ) { 
 
-  $("#mor-clock-in-hr").val("08");
-  $("#mor-clock-in-min").val("59");
-  $("#mor-clock-out-hr").val("12");
-  $("#mor-clock-out-min").val("11");
-time_calc("am", "morning-shift-result");
-  
 
 });
 
