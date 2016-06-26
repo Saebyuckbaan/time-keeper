@@ -29,20 +29,40 @@
               </td>
               <td>
                 <div class="clock-input-group">
-                  <input class="clock-input" maxlength="2" id="mor-clock-in-hr" value="00">
+                  <input class="clock-input" maxlength="2" id="mor-clock-in-hr" value="00"
+                   data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 24">
                   :
-                  <input class="clock-input" maxlength="2" id="mor-clock-in-min" value="00">
+                  <input class="clock-input" maxlength="2" id="mor-clock-in-min" value="00" 
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 59">
                 </div>
               </td>
               <td>
                 <div class="clock-input-group">
-                  <input class="clock-input" maxlength="2" id="mor-clock-out-hr" value="00">
+                  <input class="clock-input" maxlength="2" id="mor-clock-out-hr" value="00"
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 24">
                   :
-                  <input class="clock-input" maxlength="2" id="mor-clock-out-min" value="00">
+                  <input class="clock-input" maxlength="2" id="mor-clock-out-min" value="00" 
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 59">
                 </div>
               </td>
               <td>
                 <div id="morning-shift-result">0.00</div>
+              </td>
+            </tr>
+
+            <tr id="mor-five-hours-warning" hidden>
+              <td style="border:none;">
+                <div class="alert alert-warning" role="alert">
+                  You must take a break before 
+                  <span id="mor-five-hours-limit">00:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="mor-five-hours-alert" hidden>
+              <td style="border:none;">
+                <div class="alert alert-danger" role="alert">
+                  Warning: You worked longer than 5 hours today without a break
+                </div>
               </td>
             </tr>
 
@@ -53,16 +73,20 @@
               </td>
               <td>
                 <div class="clock-input-group">
-                  <input class="clock-input" maxlength="2" id="aft-clock-in-hr" value="00">
+                  <input class="clock-input" maxlength="2" id="aft-clock-in-hr" value="00"
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 24">
                   :
-                  <input class="clock-input" maxlength="2" id="aft-clock-in-min" value="00">
+                  <input class="clock-input" maxlength="2" id="aft-clock-in-min" value="00"
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 59">
                 </div>
               </td>
               <td>
                 <div class="clock-input-group">
-                  <input class="clock-input" maxlength="2" id="aft-clock-out-hr" value="00">
+                  <input class="clock-input" maxlength="2" id="aft-clock-out-hr" value="00"
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 24">
                   :
-                  <input class="clock-input" maxlength="2" id="aft-clock-out-min" value="00">
+                  <input class="clock-input" maxlength="2" id="aft-clock-out-min" value="00"
+                  data-toggle="tooltip" data-placement="top" title="Input must be 00 ~ 59">
                 </div>
               </td>
               <td>
@@ -70,20 +94,49 @@
               </td>
             </tr>
 
+            <tr id="aft-five-hours-warning" hidden>
+              <td style="border:none;">
+                <div class="alert alert-warning" role="alert">
+                  You must take a break before 
+                  <span id="aft-five-hours-limit">00:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr id="aft-five-hours-alert" hidden>
+              <td style="border:none;">
+                <div class="alert alert-danger" role="alert">
+                  Warning: You worked longer than 5 hours today without a break
+                </div>
+              </td>
+            </tr>
+
             <tr>
               <td>
-                <h4>Total Wored Hours today:</h4>
+                <h4>Total Worked Hours today:</h4>
               </td>
               <td>
                 <h4><span id="total_worked_hours">0.00</span></h4>
               </td>
               <td></td>
               <td></td>
-
             </tr>
+
+            <tr>
+              <td>
+                <h4>Overtime Hours today:</h4>
+              </td>
+              <td>
+                <h4><span id="over_time">0.00</span></h4>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+
           </tbody>
         </table>  
  
+        <!-- Reset Button -->
+        <button class="btn btn-default" id="reset"> RESET </button>
 
         </div>
       </div>
