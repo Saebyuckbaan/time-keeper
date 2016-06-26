@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Keeper</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/global/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/local/form.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="time-keeper-form">
+        <div class="time-keeper-form-content">
+          
+        <table class="table">
+          <thead>
+            <th></th>
+            <th>Clock-In</th>
+            <th>Clock-Out</th>
+            <th>Total</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <h4>Moring Shift</h4>
+              </td>
+              <td>
+                <div class="clock-input-group">
+                  <input class="clock-input" maxlength="2" id="mor-clock-in-hr" value="00">
+                  :
+                  <input class="clock-input" maxlength="2" id="mor-clock-in-min" value="00">
+                </div>
+              </td>
+              <td>
+                <div class="clock-input-group">
+                  <input class="clock-input" maxlength="2" id="mor-clock-out-hr" value="00">
+                  :
+                  <input class="clock-input" maxlength="2" id="mor-clock-out-min" value="00">
+                </div>
+              </td>
+              <td>
+                <div id="morning-shift-result">0.00</div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>
+                <h4>Afternoon Shift</h4>
+              </td>
+              <td>
+                <div class="clock-input-group">
+                  <input class="clock-input" maxlength="2" id="aft-clock-in-hr" value="00">
+                  :
+                  <input class="clock-input" maxlength="2" id="aft-clock-in-min" value="00">
+                </div>
+              </td>
+              <td>
+                <div class="clock-input-group">
+                  <input class="clock-input" maxlength="2" id="aft-clock-out-hr" value="00">
+                  :
+                  <input class="clock-input" maxlength="2" id="aft-clock-out-min" value="00">
+                </div>
+              </td>
+              <td>
+                <div id="afternoons-shift-result">0.00</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h4>Total Wored Hours today:</h4>
+              </td>
+              <td>
+                <h4><span id="total_worked_hours">0.00</span></h4>
+              </td>
+              <td></td>
+              <td></td>
+
+            </tr>
+          </tbody>
+        </table>  
+ 
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./javascripts/global/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="./javascripts/global/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./javascripts/local/time-calc.js"></script>
+</body>
+</html>

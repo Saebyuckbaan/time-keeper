@@ -1,3 +1,4 @@
+/*
 .form {
   margin:0 auto;
   border: 1px solid #aaa;
@@ -16,4 +17,41 @@
 .form-submit-button {
   margin: 0 auto;
   padding: 2rem;
+}
+*/
+
+.time-keeper-form {
+  margin: 4rem auto;
+  border: 2px solid #CCC;
+  border-radius: 12px;
+}
+
+.time-keeper-form .time-keeper-form-content {
+  padding: 2rem;
+}
+
+.time-keeper-form .time-keeper-form-content td {
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+}
+
+.time-keeper-form .time-keeper-form-content h4 {
+  font-weight: bold;
+}
+
+
+.time-keeper-text-field {
+  display: inline-block !important;
+  width: 30% !important;
+  margin: 1rem;
+}
+
+.clock-input {
+  width: 5rem;
+  border: 2px solid #CCC;
+  padding: 6px 0;
+  border-radius: 4px!important;
+
+  text-align: center;
+  font-size: 14pt;
 }
